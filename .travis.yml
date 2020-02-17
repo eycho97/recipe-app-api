@@ -8,4 +8,5 @@ services:
 before_script: pip install docker-compose
 
 script:
-  - docker-compose run app sh -c "python manage.py test && flake8"
+  - docker-compose run app sh -c "python manage.py test"
+  #Add flake 8 at the end for style and linting
